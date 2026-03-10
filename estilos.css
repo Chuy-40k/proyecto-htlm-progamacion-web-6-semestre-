@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-color: #eeeeee; /*color del fondo de bienvenidos(es blanco)*/
+    margin: 0;
+}
+
+.header {
+    background-color: #333333; /*gris oscuro*/
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/*don juan en rojo*/
+.header span {
+    color: red; 
+}
+
+.navbar {
+    background-color: #444444;/*gris claro*/
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    
+}
+
+/*coso que hace q se ponga rojo al poner el mouse*/
+.navbar a:hover {
+    background-color: red;
+}
+
+.contenido {
+    /*el  bloque blanco del texto "bienvenidos"*/
+    background-color: white;
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    min-height: 80vh; 
+    box-sizing: border-box; 
+}
+
+
+/* columnas de imagenes*/
+.pilar {
+    position: fixed;
+    top: 0;
+    width: 100px;
+    z-index: -1;
+}
+
+
+.pilar-izquierdo { 
+    left: 20;
+    display: flex;
+    flex-direction: column;
+    animation: mover 10s linear infinite; }
+
+    .pilar-derecho { 
+    right: 20;
+    display: flex;
+    flex-direction: column;
+    animation: mover 10s linear infinite;
+    animation-direction: reverse; }
+
+    /* Estilo de las piezas */
+.cinta-imagenes img {
+    width: 100%; /* tamaño de la imagen*/
+    margin: 20px auto; /* Espacio entre cada imagen */
+}
+
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-33.333%); }
+}
