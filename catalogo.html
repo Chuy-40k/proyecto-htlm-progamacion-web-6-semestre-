@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Catálogo - Refacciones Don Juan</title>
     <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+
     <div class="header">
        <h1>Refacciones <span>Don Juan</span></h1>
         <p>Catálogo de Piezas</p>
@@ -20,33 +22,44 @@
 
     <div class="contenido">
         <h2>Nuestras Refacciones</h2>
+
+        <div class="buscador-contenedor">
+    <input type="text" id="inputBuscador" onkeyup="buscarProducto()" placeholder="Escribe la pieza que buscas...">
+    <button onclick="buscarProducto()">Buscar</button>
+</div>
+        
         <div class="grid-productos">
             <div class="producto-card">
-                <img src="imagenes/balatas.png">
+                <img src="imagenes/balatas.png" alt="Balatas">
                 <h3>Balatas Delanteras</h3>
                 <p class="precio">$850.00</p>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Balatas Delanteras', 850)">Agregar</button>
             </div>
+            
             <div class="producto-card">
-                <img src="imagenes/suspencion de carro.png">
+                <img src="imagenes/suspencion de carro.png" alt="Suspensión">
                 <h3>Amortiguador</h3>
-                <p class="precio">$1200.00</p>
+                <p class="precio">$1,200.00</p>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Amortiguador', 1200)">Agregar</button>
             </div>
+            
             <div class="producto-card">
-                <img src="imagenes/rin de carro.png">
+                <img src="imagenes/rin de carro.png" alt="Rin">
                 <h3>Rin Deportivo</h3>
-                <p class="precio">$2500.00</p>
+                <p class="precio">$2,500.00</p>
                 <button class="btn-agregar" onclick="agregarAlCarrito('Rin Deportivo', 2500)">Agregar</button>
             </div>
+            
             <div class="producto-card">
-                <img src="imagenes/pieza de direccion.png">
-                <h3>Terminal Dirección</h3>
+                <img src="imagenes/pieza de direccion.png" alt="Dirección">
+                <h3>Terminal de Dirección</h3>
                 <p class="precio">$450.00</p>
-                <button class="btn-agregar" onclick="agregarAlCarrito('Terminal Dirección', 450)">Agregar</button>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Terminal de Dirección', 450)">Agregar</button>
             </div>
         </div>
     </div>
+
+
 
     <script src="funciones.js"></script>
 </body>
