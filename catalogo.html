@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - Refacciones Don Juan</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="header">
+       <h1>Refacciones <span>Don Juan</span></h1>
+        <p>Catálogo de Piezas</p>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" class="active">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="contenido">
+        <h2>Nuestras Refacciones</h2>
+        <div class="grid-productos">
+            <div class="producto-card">
+                <img src="imagenes/balatas.png">
+                <h3>Balatas Delanteras</h3>
+                <p class="precio">$850.00</p>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Balatas Delanteras', 850)">Agregar</button>
+            </div>
+            <div class="producto-card">
+                <img src="imagenes/suspencion de carro.png">
+                <h3>Amortiguador</h3>
+                <p class="precio">$1200.00</p>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Amortiguador', 1200)">Agregar</button>
+            </div>
+            <div class="producto-card">
+                <img src="imagenes/rin de carro.png">
+                <h3>Rin Deportivo</h3>
+                <p class="precio">$2500.00</p>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Rin Deportivo', 2500)">Agregar</button>
+            </div>
+            <div class="producto-card">
+                <img src="imagenes/pieza de direccion.png">
+                <h3>Terminal Dirección</h3>
+                <p class="precio">$450.00</p>
+                <button class="btn-agregar" onclick="agregarAlCarrito('Terminal Dirección', 450)">Agregar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

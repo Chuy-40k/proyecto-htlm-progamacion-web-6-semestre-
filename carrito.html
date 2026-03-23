@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito - Refacciones Don Juan</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="mostrarCarrito()">
+    <div class="header">
+        <h1>Refacciones <span>Don Juan</span></h1>
+        <p>Tu Carrito</p>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html" class="active">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+
+    <div class="contenido">
+        <h2>Resumen de Pedido</h2>
+        <div id="lista-carrito" class="resumen-carrito">
+            </div>
+        <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

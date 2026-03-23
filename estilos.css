@@ -78,3 +78,74 @@ body {
     0% { transform: translateY(0); }
     100% { transform: translateY(-33.333%); }
 }
+
+/*PESTAÑA CATÁLOGO*/
+.grid-productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.producto-card img {
+    width: 100px;
+    height: auto;
+}
+
+.producto-card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/*PESTAÑA CARRITO*/
+.tabla-carrito {
+    border: 2px dashed #ccc;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-rojo {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*PESTAÑA CONTACTO*/
+.formulario-contacto input, 
+.formulario-contacto textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto textarea {
+    height: 100px;
+}
+
+.formulario-contacto button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: red;
+}
